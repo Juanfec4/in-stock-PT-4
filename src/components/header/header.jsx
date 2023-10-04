@@ -1,7 +1,7 @@
 import './styles.scss'
+import logo from '../../assets/InStock-Logo.svg'
 
-
-function Header() {
+function header() {
   return (
     <div className="header__container-navigation">
       <div className="header_container-image">
@@ -17,4 +17,4 @@ function Header() {
   )
 }
 
-export default Header
+export default header
