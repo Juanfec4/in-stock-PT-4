@@ -17,15 +17,11 @@ const warehouseLister = () => {
             .catch((error) =>{
             console.error("Error fetching warehouses", error)
         },)})
+    }
 
-
-const handleWarehouseSelect = (warehouse) => {
-    <Link
-        to={{
-            pathname: `/details/${warehouseList.id}`,
-            state: {id: id}
-        }}/>;
-}};
+const handleWarehouseSelect = (id) => {
+    history.push('/details/$id');
+};
 return (
     <div className='body'>
     <Header/>
