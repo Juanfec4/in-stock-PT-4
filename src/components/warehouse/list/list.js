@@ -9,7 +9,7 @@ const warehouseLister = () => {
     useEffect(() => {
         axios.get(listAPI)
             .then((response) => {
-                const date = response.data;
+                const data = response.data;
                 if (data.length > 0 ) {
                     setWarehouseList(data);
                 }
@@ -48,8 +48,10 @@ return (
             <h4>ACTIONS</h4>
         </div>
         <div className='warehouse-list'>
-            <div className='warehouse-list__item'>
-                <button onClick={handleWarehouseSelect}><h3>{warehouseList.warehouse}</h3></button>
+            <div className='warehouse-list__item' key={warehouse.id}>
+                <button onClick= {() => handleWarehouseSelect(warehouse.id)}>
+                    <h3>{warehouseList.warehouse}</h3>
+                </button>
                 <div className='warehouse-list__item__address'>{warehouseList.address}</div>
                 <div className='warehouse-list__item__name'>{warehouseList.contactName}</div>
                 <div className='warehouse-list__item__group'>
