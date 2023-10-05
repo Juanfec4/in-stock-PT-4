@@ -40,8 +40,11 @@ return (
             <h4>WAREHOUSE</h4>
             <img>{/*import sort image here*/}</img>
             <h4>ADDRESS</h4>
+            <img>{/*import sort image here*/}</img>
             <h4>CONTACT NAME</h4>
+            <img>{/*import sort image here*/}</img>
             <h4>CONTACT INFORMATION</h4>
+            <img>{/*import sort image here*/}</img>
             <h4>ACTIONS</h4>
         </div>
         <div className='warehouse-list'>
