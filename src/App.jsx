@@ -1,5 +1,7 @@
-const App = () => {
-  return <div>CONTENT</div>;
-};
+import Header from './components/header/header'
 
-export default App;
+const App = () => {
+  return <Header />
+}
+
+export default App
