@@ -1,5 +1,5 @@
-import "./styles.scss";
-import logo from "../../assets/InStock-Logo.svg";
+import './header.scss'
+import logo from '../../assets/InStock-Logo.svg'
 
 function Header() {
   return (
@@ -7,14 +7,18 @@ function Header() {
       <div className="header_container-image">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
-      <div>
-        <p>Warehouse</p>
-      </div>
-      <div>
-        <p>Inventory</p>
+      <div className="header_container-items">
+        <div>
+          <p className="header_container-item">Warehouse</p>
+        </div>
+        <div>
+          <p className="header_container-item1">Inventory</p>
+        </div>
       </div>
     </div>
   );
 }
 
+
 export default Header;
+
