@@ -1,0 +1,59 @@
+.container__delete {
+  display: flex;
+  flex-direction: column;
+}
+.container__delete--buttons {
+  display: flex;
+  flex-direction: row;
+}
+.delete__container-title-paragraph {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.delete__container-p {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  margin-top: 5px;
+  padding-bottom: 200px;
+}
+.delete__container-btn {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.buttonCancel {
+  border-radius: 40%;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  line-height: 20px;
+  color: black;
+  background-color: white;
+  border: 1px solid grey;
+}
+.delete__container-btn1 {
+  padding-right: 10px;
+  padding-left: 200px;
+}
+.buttonDelete {
+  border-radius: 40%;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  font-size: 13px;
+  line-height: 20px;
+  color: white;
+  background-color: #c94515;
+}
+.delete__button-x {
+  border: none;
+  background-color: white;
+  padding-left: 450px;
+}
