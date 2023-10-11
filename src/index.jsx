@@ -11,6 +11,7 @@ import ItemPage from './pages/Item/ItemPage'
 import WarehousePage from './pages/Warehouse/WarehousePage'
 import InventoryPage from './pages/Inventory/InventoryPage'
 import Delete from './components/warehouse/delete/delete'
+import Edit from './components/warehouse/edit/edit'
 
 //Main Layout
 const AppLayout = () => {
@@ -19,6 +20,7 @@ const AppLayout = () => {
       <Header />
       <Outlet />
       <Delete />
+      <Edit />
     </>
   )
 }

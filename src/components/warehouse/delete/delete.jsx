@@ -3,7 +3,9 @@ import './delete.scss'
 function Delete() {
   return (
     <div className="delete__container">
-      <button className="delete__button-x"> X </button>
+      <button className="delete__button-x">
+        X
+      </button>
       <div className="container__delete">
         <div className="delete__container-title">
           <h2 className="delete__container-title-paragraph">
