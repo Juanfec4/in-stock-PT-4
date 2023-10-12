@@ -60,13 +60,13 @@ return (
             
         </div>
         <div className="inventory-sort">
-          <h4>WAREHOUSE</h4>
+          <h4>INVENTORY ITEM</h4>
           <img>{/*import sort image here*/}</img>
-          <h4>ADDRESS</h4>
+          <h4>CATEGORY</h4>
           <img>{/*import sort image here*/}</img>
-          <h4>CONTACT NAME</h4>
+          <h4>STATUS</h4>
           <img>{/*import sort image here*/}</img>
-          <h4>CONTACT INFORMATION</h4>
+          <h4>QUANTITY</h4>
           <img>{/*import sort image here*/}</img>
           <h4>ACTIONS</h4>
         </div>
