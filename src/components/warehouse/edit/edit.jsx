@@ -1,9 +1,9 @@
 // Why do I need an API here.
 // WHY is my button not sending the info, something must be wrong on my buttons
 
-
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './edit.scss'
+import axios from 'axios'
 
 function Edit() {
   const [name, setName] = useState('')
@@ -14,7 +14,6 @@ function Edit() {
   const [position, setPosition] = useState('')
   const [number, setNumber] = useState('')
   const [email, setEmail] = useState('')
-
 
   const WarehouseName = (event) => {
     setName(event.target.value)
@@ -48,108 +47,130 @@ function Edit() {
     event.preventDefault()
     console.log(event.target)
   }
-
+  //   useEffect(() => {
+  //     axios
+  //       .put(`http://192.168.0.190:8080/api/inventories/${'2'}`)
+  //       .then((response) => {
+  //         console.log(response)
+  //       })
+  //   }, [])
   return (
-    <div>
-      <h2 className="edit__container-title">Edit Warehouse</h2>
-      <hr></hr>
-      <h3 className="edit__container--subtitle">Warehouse Details </h3>
-      <div className="edit__container--form">
-        <form className="form" onSubmit={handleFormSubmit}>
-          <label>
-            {' '}
-            <p>Warehouse Name</p>
-            <input
-              onChange={WarehouseName}
-              type={'text'}
-              name={'Warehouse name'}
-              placeholder={'Warehouse Name'}
-              value={name}
-            ></input>
-          </label>
-          <label>
-            {' '}
-            <p>Street Address</p>
-            <input
-              onChange={streetAddress}
-              type={'text'}
-              name={'Street Address'}
-              placeholder={'Street Address '}
-              value={adress}
-            ></input>
-          </label>
-          <label>
-            {' '}
-            <p>City</p>
-            <input
-              onChange={cityNameWarehouse}
-              type={'text'}
-              name={'Name of your city'}
-              placeholder={'Name of your City'}
-              value={cityname}
-            ></input>
-          </label>
-          <label>
-            {' '}
-            <p>Country</p>
-            <input
-              onChange={countryNameWarehouse}
-              type={'text'}
-              name={'Name of your Country'}
-              placeholder={'Name of your Country'}
-              value={country}
-            ></input>
-          </label>
-        </form>
+    <div className="container__entire-form">
+      <div className="Edit_Warehouse-div">
+        <h1 className="edit__container-title">Edit Warehouse</h1>
       </div>
       <hr></hr>
-      <h3>Contact Details </h3>
-      <form onSubmit={handleFormSubmit}>
-        <label>
-          {' '}
-          <p>Contact Name</p>
-          <input
-            onChange={contactNameDetails}
-            type={'text'}
-            name={'Warehouse name'}
-            placeholder={'Warehouse Name'}
-            value={contactName}
-          ></input>
-        </label>
-        <label>
-          {' '}
-          <p>Position</p>
-          <input
-            onChange={positionDetails}
-            type={'text'}
-            name={'Warehouse name'}
-            placeholder={'Warehouse Name'}
-            value={position}
-          ></input>
-        </label>
-        <label>
-          {' '}
-          <p>Phone Number</p>
-          <input
-            onChange={numberDetails}
-            type={'text'}
-            name={'Warehouse name'}
-            placeholder={'Warehouse Name'}
-            value={number}
-          ></input>
-        </label>
-        <label>
-          {' '}
-          <p>Email </p>
-          <input
-            onChange={emailDetails}
-            type={'text'}
-            name={'Warehouse name'}
-            placeholder={'Warehouse Name'}
-            value={email}
-          ></input>
-        </label>
-      </form>
+      <div className="entire__form-container">
+        <div className="edit__container--form">
+          <h1 className="edit__container--subtitle">Warehouse Details </h1>
+
+          <form className="form" onSubmit={handleFormSubmit}>
+            <label>
+              {' '}
+              <p className="title_containers--edit">Warehouse Name</p>
+              <input
+                className="inputs__container"
+                onChange={WarehouseName}
+                type={'text'}
+                name={'Warehouse name'}
+                placeholder={'Warehouse Name'}
+                value={name}
+              ></input>
+            </label>
+            <label>
+              {' '}
+              <p className="title_containers--edit">Street Address</p>
+              <input
+                className="inputs__container"
+                onChange={streetAddress}
+                type={'text'}
+                name={'Street Address'}
+                placeholder={'Street Address '}
+                value={adress}
+              ></input>
+            </label>
+            <label>
+              {' '}
+              <p className="title_containers--edit">City</p>
+              <input
+                className="inputs__container"
+                onChange={cityNameWarehouse}
+                type={'text'}
+                name={'Name of your city'}
+                placeholder={'Name of your City'}
+                value={cityname}
+              ></input>
+            </label>
+            <label>
+              {' '}
+              <p className="title_containers--edit">Country</p>
+              <input
+                className="inputs__container"
+                onChange={countryNameWarehouse}
+                type={'text'}
+                name={'Name of your Country'}
+                placeholder={'Name of your Country'}
+                value={country}
+              ></input>
+            </label>
+          </form>
+        </div>
+        <hr></hr>
+        <div className="container__contact">
+          <h3 className="contact_details-div">Contact Details </h3>
+
+          <form className="form__div"onSubmit={handleFormSubmit}>
+            <label>
+              {' '}
+              <p className="title_containers--edit">Contact Name</p>
+              <input
+                className="inputs__container"
+                onChange={contactNameDetails}
+                type={'text'}
+                name={'Warehouse name'}
+                placeholder={'Warehouse Name'}
+                value={contactName}
+              ></input>
+            </label>
+            <label>
+              {' '}
+              <p className="title_containers--edit">Position</p>
+              <input
+                className="inputs__container"
+                onChange={positionDetails}
+                type={'text'}
+                name={'Warehouse name'}
+                placeholder={'Warehouse Name'}
+                value={position}
+              ></input>
+            </label>
+            <label>
+              {' '}
+              <p className="title_containers--edit">Phone Number</p>
+              <input
+                className="inputs__container"
+                onChange={numberDetails}
+                type={'text'}
+                name={'Warehouse name'}
+                placeholder={'Warehouse Name'}
+                value={number}
+              ></input>
+            </label>
+            <label>
+              {' '}
+              <p className="title_containers--edit">Email </p>
+              <input
+                className="inputs__container"
+                onChange={emailDetails}
+                type={'text'}
+                name={'Warehouse name'}
+                placeholder={'Warehouse Name'}
+                value={email}
+              ></input>
+            </label>
+          </form>
+        </div>
+      </div>
       <div className="container__buttons--div">
         <div className="container__btn--cancel">
           <button type="submit" className="cancel__btn">

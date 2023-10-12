@@ -17,7 +17,7 @@ const AppLayout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      {/* <Outlet /> */}
       <Edit />
     </>
   )

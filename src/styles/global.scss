@@ -4,3 +4,27 @@ $font: 'Titillium Web', sans-serif;
 * {
   font-family: $font;
 }
+@mixin mobileHeader {
+  text-size: 20px;
+  line-height: 36px;
+}
+@mixin mobileSub {
+  text-size: 13px;
+  line-height: 20px;
+}
+@mixin mobileLabel {
+  font-size: 13px;
+  line-height: 20px;
+}
+@mixin mobileBodyLarge {
+  text-size: 15px;
+  line-height: 26px;
+}
+@mixin mobileBodyMedium {
+  text-size: 13px;
+  line-height: 20px;
+}
+@mixin mobileBodySmall {
+  text-size: 11px;
+  line-height: 16px;
+}

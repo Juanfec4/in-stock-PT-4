@@ -1,0 +1,104 @@
+.edit__container-title {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.edit__container--subtitle {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.title_containers--edit {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 1px;
+  padding-left: 3px;
+  font-weight: 700;
+}
+.inputs__container {
+  border-radius: 25px;
+  border: 1px solid grey;
+  padding: 10px;
+  width: 200px;
+  height: 5px;
+}
+.container__buttons--div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+.container__btn--cancel {
+}
+.container--btn--save {
+  padding-left: 10px;
+}
+.cancel__btn {
+  border-radius: 25%;
+  font-size: 11px;
+  line-height: 16px;
+  color: black;
+  background-color: white;
+  border: 1px solid grey;
+  padding: 10px 20px;
+}
+.save__btn {
+  border-radius: 25%;
+  font-size: 11px;
+  line-height: 16px;
+  color: white;
+  background-color: #2e66e5;
+  border: 1px solid #2e66e5;
+  padding: 10px 20px;
+}
+@media (min-width: 820px) and (max-width: 1180px) {
+  .edit__container--form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  .container__contact {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+  }
+  .entire__form-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 130px;
+    padding-left: 200px;
+  }
+  .contact_details-div {
+    margin-bottom: 5px;
+  }
+  .edit__container--subtitle {
+    padding-top: 15px;
+    font-size: larger;
+  }
+  .title_containers--edit {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .inputs__container {
+    border-radius: 25px;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 250px;
+    height: 11px;
+  }
+  .form__div {
+    padding-top: 18px;
+  }
+  .edit__container-title {
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 230px;
+  }
+  .container__buttons--div {
+    padding-left: 800px;
+  }
+}
+
+@media (min-width: 1180px) and (max-width: 1800px) {
+}
