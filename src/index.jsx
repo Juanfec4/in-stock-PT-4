@@ -1,25 +1,27 @@
 import './styles/global.scss'
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 //Import layout
-import Header from "./components/header/header";
+import Header from './components/header/header'
 //Import pages
-import ItemPage from "./pages/Item/ItemPage";
-import WarehousePage from "./pages/Warehouse/WarehousePage";
-import InventoryPage from "./pages/Inventory/InventoryPage";
+import ItemPage from './pages/Item/ItemPage'
+import WarehousePage from './pages/Warehouse/WarehousePage'
+import InventoryPage from './pages/Inventory/InventoryPage'
+import Add from './components/add'
 
 //Main Layout
 const AppLayout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      {/* <Outlet /> */}
+      <Add />
     </>
-  );
-};
+  )
+}
 
 //Router
 const router = createBrowserRouter([
@@ -27,25 +29,24 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <WarehousePage />,
       },
       {
-        path: "/inventory",
+        path: '/inventory',
         element: <InventoryPage />,
       },
       {
-        path: "/item/:id",
+        path: '/item/:id',
         element: <ItemPage />,
       },
     ],
   },
-]);
+])
 
 //Render routes
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
-);
-
+  </React.StrictMode>,
+)
