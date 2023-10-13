@@ -1,0 +1,19 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.warehouse-form {
+  display: flex;
+  padding: $padding-sm;
+  &__section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: start;
+    justify-content: center;
+    padding: $padding-sm;
+  }
+  &__section-title {
+    padding-left: $padding-sm;
+  }
+}

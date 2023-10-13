@@ -1,0 +1,24 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.button--secondary {
+  height: $btn-height-sm;
+  padding: 0 $padding-sm;
+  background-color: $clr-white;
+  color: $clr-slate;
+  border-radius: $radius-md;
+  border: solid 1px $clr-slate;
+  width: 100%;
+  cursor: pointer;
+
+  @include md {
+    width: max-content;
+    height: $btn-height-md;
+  }
+
+  &:hover {
+    color: $clr-in-stock-indigo;
+    border-color: $clr-in-stock-indigo;
+  }
+}

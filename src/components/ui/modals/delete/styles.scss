@@ -1,0 +1,43 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.modal {
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($clr-in-stock-black, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container {
+    background-color: $clr-white;
+    padding: $padding-lg;
+    border-radius: $radius-sm;
+    position: relative;
+    .icon-button {
+      position: absolute;
+      top: $padding-md;
+      right: $padding-md;
+    }
+  }
+  &__text-container {
+    padding: $padding-sm;
+    display: flex;
+    flex-direction: column;
+    gap: $padding-sm;
+  }
+  &__message {
+    max-width: 70ch;
+  }
+  &__button-container {
+    padding: 0 $padding-md;
+    display: flex;
+    justify-content: end;
+    gap: $padding-sm;
+  }
+}

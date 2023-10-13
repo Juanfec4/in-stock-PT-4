@@ -1,6 +1,34 @@
-@mixin tablet {
-    @media (min-width:768px){@content;}
-}
-@mixin desktop {
-    @media (min-width:1280px){@content;}
-}
+//Paddings
+$padding-xs: 0.5rem;
+$padding-sm: 1rem;
+$padding-md: 1.5rem;
+$padding-lg: 2rem;
+
+//Margins
+$margin-xs: 0.5rem;
+$margin-sm: 1rem;
+$margin-md: 1.5rem;
+$margin-lg: 2rem;
+
+//Radius
+$radius-md: 1.25rem;
+$radius-sm: 0.25rem;
+
+//Fonts
+$fnt-primary: "Titillium Web", sans-serif;
+
+//Buttons
+$btn-height-sm: 2.25rem;
+$btn-height-md: 2.375rem;
+
+//Fields
+$field-height-sm: 2.25rem;
+$field-height-md: 2.375rem;
+$field-width-md: 12.5rem;
+
+//Tags
+$tag-height-sm: 1.625rem;
+$tag-height-md: 1.75rem;
+
+//max
+$max-width: 1200px;

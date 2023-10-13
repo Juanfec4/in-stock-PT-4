@@ -1,0 +1,30 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.search-box {
+  padding: 0 $padding-sm;
+  border-radius: $radius-md;
+  height: $field-height-sm;
+  border: solid 1px $clr-slate;
+  outline: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  @include md {
+    width: $field-width-md;
+  }
+  &:focus-within {
+    border-color: $clr-in-stock-indigo;
+  }
+  &__input {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  &__icon {
+    vertical-align: bottom;
+  }
+}

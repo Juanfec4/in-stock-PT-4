@@ -1,0 +1,45 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+  padding: $padding-sm;
+  &__label {
+    display: inline-block;
+  }
+
+  &__input {
+    padding: 0 $padding-sm;
+    border-radius: $radius-md;
+    border: solid 1px $clr-slate;
+    outline: none;
+    width: 100%;
+    display: inline-block;
+    &:focus-within {
+      border-color: $clr-in-stock-indigo;
+    }
+
+    &--alert {
+      @extend .text-area__input;
+      border-color: $clr-red;
+
+      &:focus-within {
+        border-color: $clr-red;
+      }
+    }
+  }
+
+  &__alert {
+    color: $clr-red;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    vertical-align: bottom;
+  }
+}
