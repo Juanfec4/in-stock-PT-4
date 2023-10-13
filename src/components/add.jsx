@@ -49,10 +49,19 @@ function Add() {
   }
   //   useEffect(() => {
   //     axios
-  //       .put(`http://192.168.0.190:8080/api/inventories/${'2'}`)
+  //       .post(`http://192.168.0.190:8080/api/inventories/${'2'}`,{warehouse_name
+  // address
+  // city
+  // country
+  // contact_name
+  // contact_position
+  // contact_phone
+  // contact_email
+  //   })
   //       .then((response) => {
   //         console.log(response)
   //       })
+  //       .catch (WRITE THE ERROR PAGE)
   //   }, [])
   return (
     <div className="container__entire-form">
