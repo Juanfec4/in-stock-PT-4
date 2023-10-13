@@ -44,25 +44,25 @@ function Add() {
   }
 
   const handleFormSubmit = (event) => {
+    axios
+      .post(`http://192.168.0.190:8080/api/inventories/${'2'}`, {
+        warehouse_name,
+        address,
+        city,
+        country,
+        contact_name,
+        contact_position,
+        contact_phone,
+        contact_email,
+      })
+      .then((response) => {
+        console.log(response).catch((error) => {
+          console.error
+        })
+      }, [])
     event.preventDefault()
     console.log(event.target)
   }
-  //   useEffect(() => {
-  //     axios
-  //       .post(`http://192.168.0.190:8080/api/inventories/${'2'}`,{warehouse_name
-  // address
-  // city
-  // country
-  // contact_name
-  // contact_position
-  // contact_phone
-  // contact_email
-  //   })
-  //       .then((response) => {
-  //         console.log(response)
-  //       })
-  //       .catch (WRITE THE ERROR PAGE)
-  //   }, [])
   return (
     <div className="container__entire-form">
       <div className="Edit_Warehouse-div">
@@ -187,7 +187,7 @@ function Add() {
           </button>
         </div>
         <div className="container--btn--save">
-          <button type="submit" className="save__btn">
+          <button type={"HandleFormSubmit"} className="save__btn">
             + Add Warehouse{' '}
           </button>
         </div>
