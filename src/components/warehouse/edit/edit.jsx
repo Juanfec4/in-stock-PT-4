@@ -1,6 +1,3 @@
-// Why do I need an API here.
-// WHY is my button not sending the info, something must be wrong on my buttons
-
 import { useState, useEffect } from 'react'
 import './edit.scss'
 import axios from 'axios'
@@ -44,16 +41,16 @@ function Edit() {
   }
 
   const handleFormSubmit = (event) => {
+    axios
+      .put(`http://192.168.0.190:8080/api/inventories/${'2'}`)
+      .then((response) => {
+        console.log(response).catch((error) => {
+          console.error
+        })
+      }, [])
     event.preventDefault()
     console.log(event.target)
   }
-  //   useEffect(() => {
-  //     axios
-  //       .put(`http://192.168.0.190:8080/api/inventories/${'2'}`)
-  //       .then((response) => {
-  //         console.log(response)
-  //       })
-  //   }, [])
   return (
     <div className="container__entire-form">
       <div className="Edit_Warehouse-div">
@@ -119,7 +116,7 @@ function Edit() {
         <div className="container__contact">
           <h3 className="contact_details-div">Contact Details </h3>
 
-          <form className="form__div"onSubmit={handleFormSubmit}>
+          <form className="form__div" onSubmit={handleFormSubmit}>
             <label>
               {' '}
               <p className="title_containers--edit">Contact Name</p>
