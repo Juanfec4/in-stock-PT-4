@@ -1,0 +1,48 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.select-field {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 100%;
+  padding: 0 $padding-sm;
+  &__input-container {
+    border: solid 1px $clr-slate;
+    border-radius: $radius-md;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 $padding-sm;
+    width: 100%;
+    @include md {
+      width: 100%;
+    }
+    position: relative;
+    &:focus-within {
+      border-color: $clr-in-stock-indigo;
+    }
+  }
+  &__input {
+    border: none;
+    height: $field-height-sm;
+    outline: none;
+    background-color: $clr-white;
+    color: $clr-in-stock-black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    &--alert {
+      @extend .select-field__input;
+      border-color: $clr-red;
+      &:focus-within {
+        border-color: $clr-red;
+      }
+    }
+  }
+  &__drop-icon {
+    position: absolute;
+    right: $padding-sm;
+  }
+}

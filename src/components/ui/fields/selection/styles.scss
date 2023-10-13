@@ -1,0 +1,18 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.selection {
+  padding: 0 $padding-sm;
+  &__fieldset {
+    border: none;
+    display: flex;
+    padding: 0;
+    margin-top: 0.25rem;
+    gap: $padding-md;
+  }
+  &__item {
+    display: flex;
+    gap: 0.25rem;
+  }
+}

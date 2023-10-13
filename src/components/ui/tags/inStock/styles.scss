@@ -1,0 +1,19 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.in-stock-tag {
+  background-color: rgba($clr-green, 0.07);
+  color: $clr-green;
+  border-radius: $radius-md;
+  height: $tag-height-sm;
+  padding: 0 $padding-xs;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  width: max-content;
+  @include md {
+    height: $tag-height-md;
+  }
+}

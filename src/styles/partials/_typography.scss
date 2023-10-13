@@ -1,0 +1,92 @@
+@use "./variables" as *;
+@use "./responsive" as *;
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+//Page header
+h1 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin: 0;
+  @include md {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+//Subheader
+h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0;
+  @include md {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+//Labels links & buttons
+h3,
+a,
+label,
+button {
+  font-weight: 600;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+  margin: 0;
+  @include md {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+
+//Table header
+h4,
+th {
+  font-weight: 400;
+  font-size: 0.688rem;
+  line-height: 1rem;
+  margin: 0;
+  @include md {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+}
+
+//Body
+p {
+  margin: 0;
+}
+
+//Body large
+.p-lg {
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.625rem;
+  @include md {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+
+//Body medium
+.p-md {
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+  @include md {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+
+//Body small
+.p-sm {
+  font-weight: 400;
+  font-size: 0.688rem;
+  line-height: 1rem;
+  @include md {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+}

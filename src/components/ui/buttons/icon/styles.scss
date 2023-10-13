@@ -1,0 +1,9 @@
+.icon-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &__icon {
+    vertical-align: bottom;
+  }
+}

@@ -1,0 +1,46 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/responsive" as *;
+
+.warehouse-info {
+  .button--primary {
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding-md;
+  }
+  &__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  border-bottom: solid 1px $clr-cloud;
+}
+
+.warehouse-details {
+  display: flex;
+  align-items: center;
+  &__container {
+    width: 50%;
+    padding: $padding-sm;
+  }
+  &__title {
+    color: $clr-slate;
+  }
+}
+
+.warehouse-location {
+  width: 30%;
+  margin: $margin-sm;
+  border-right: solid 1px $clr-cloud;
+}
+
+.warehouse-contact {
+  width: 70%;
+  display: flex;
+}

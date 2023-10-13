@@ -1,0 +1,45 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/responsive" as *;
+
+.item-info {
+  .button--primary {
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding-md;
+  }
+  &__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  border-bottom: solid 1px $clr-cloud;
+}
+
+.item-details {
+  display: flex;
+  padding: $padding-md;
+  &__section {
+    padding: $padding-sm;
+    width: 50%;
+  }
+  &__element {
+    padding: $padding-sm;
+  }
+  &__title {
+    color: $clr-slate;
+  }
+  &__group-container {
+    display: flex;
+    width: 100%;
+    .item-details__element {
+      width: 50%;
+    }
+  }
+}

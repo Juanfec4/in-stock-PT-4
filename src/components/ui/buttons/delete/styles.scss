@@ -1,0 +1,23 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.button--delete {
+  height: $btn-height-sm;
+  padding: 0 $padding-sm;
+  background-color: $clr-red;
+  color: $clr-white;
+  border-radius: $radius-md;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+
+  @include md {
+    width: max-content;
+    height: $btn-height-md;
+  }
+
+  &:hover {
+    background-color: $clr-graphite;
+  }
+}

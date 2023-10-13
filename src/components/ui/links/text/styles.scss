@@ -1,0 +1,19 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.text-link {
+  color: $clr-in-stock-indigo;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  &__img {
+    vertical-align: bottom;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}

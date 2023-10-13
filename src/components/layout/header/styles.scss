@@ -1,0 +1,82 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/colors" as *;
+@use "../../../styles/partials/responsive" as *;
+
+.header {
+  background-color: $clr-graphite;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  &__content {
+    padding: $padding-sm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $padding-xs;
+    @include md {
+      max-width: $max-width;
+      height: 100%;
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 $padding-sm;
+    }
+    @include lg {
+      padding: 0;
+    }
+  }
+  &__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__nav-list {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: $padding-lg;
+  }
+  &__nav-element {
+    display: flex;
+  }
+  &__link {
+    color: $clr-slate;
+    text-decoration: none;
+    padding: 0 $padding-sm;
+    border-radius: $radius-md;
+    height: $btn-height-sm;
+    vertical-align: bottom;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    @include md {
+      height: $btn-height-md;
+    }
+    &:hover {
+      color: $clr-white;
+      text-decoration: underline;
+    }
+  }
+  .active {
+    @extend .header__link;
+    color: $clr-white;
+    background-color: $clr-in-stock-black;
+  }
+  &__logo {
+    max-height: 35px;
+    @include md {
+      max-height: auto;
+    }
+  }
+  &__backdrop {
+    background-color: $clr-graphite;
+    height: 75px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+  }
+}

@@ -1,0 +1,28 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.add-item-form {
+  display: flex;
+  padding: $padding-sm;
+  align-items: start;
+  &__section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: start;
+    justify-content: center;
+    padding: $padding-sm;
+  }
+  &__section-title {
+    padding-left: $padding-sm;
+  }
+  .divider--vertical {
+    height: 400px;
+    width: 1px;
+    background-color: $clr-cloud;
+  }
+  #item-quantity {
+    max-width: 100px;
+  }
+}

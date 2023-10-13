@@ -1,0 +1,28 @@
+@use "../../../../styles/partials/variables" as *;
+@use "../../../../styles/partials/colors" as *;
+@use "../../../../styles/partials/responsive" as *;
+
+.button--primary {
+  height: $btn-height-sm;
+  padding: 0 $padding-sm;
+  background-color: $clr-in-stock-indigo;
+  color: $clr-white;
+  border-radius: $radius-md;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+
+  @include md {
+    width: max-content;
+    height: $btn-height-md;
+  }
+
+  &:hover {
+    background-color: $clr-graphite;
+  }
+  .button__icon {
+    vertical-align: bottom;
+    padding-right: $padding-xs;
+    height: 20px;
+  }
+}
