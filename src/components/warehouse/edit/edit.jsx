@@ -43,14 +43,14 @@ function Edit() {
   const handleFormSubmit = (event) => {
     axios
       .put(`http://192.168.0.190:8080/api/inventories/${'2'}`, {
-        warehouse_name,
+        name,
         address,
         city,
         country,
-        contact_name,
-        contact_position,
-        contact_phone,
-        contact_email,
+        contactName,
+        position,
+        number,
+        email,
       })
       .then((response) => {
         console.log(response)
@@ -181,7 +181,7 @@ function Edit() {
       </div>
       <div className="container__buttons--div">
         <div className="container__btn--cancel">
-          <button type="submit" className="cancel__btn">
+          <button type="button" className="cancel__btn">
             Cancel{' '}
           </button>
         </div>
