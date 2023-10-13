@@ -1,6 +1,3 @@
-// Why do I need an API here.
-// WHY is my button not sending the info, something must be wrong on my buttons
-
 import { useState, useEffect } from 'react'
 import './add.scss'
 import axios from 'axios'
