@@ -5,6 +5,10 @@
 .warehouses-table {
   width: 100%;
   border-collapse: collapse;
+  display: none;
+  @include md {
+    display: block;
+  }
 
   &__title {
     text-align: start;
@@ -26,7 +30,15 @@
       &:hover {
         background-color: rgba($clr-in-stock-indigo, 0.07);
         cursor: pointer;
+        @include sm {
+          display: none;
+        }
       }
     }
+  }
+}
+.warehouses-table__row1 {
+  @include lg {
+    display: none;
   }
 }
