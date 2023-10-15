@@ -1,8 +1,9 @@
-# React + Vite
+# In-Stock Client SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the front-end portion of the In-Stock project.
 
-Currently, two official plugins are available:
+## Environment Variables
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run this project, you will need to add the following environment variables to your `.env` file
+
+`VITE_BACK_END_API=` = "api url" (ex. http://192.168.31.21:8080/api)
